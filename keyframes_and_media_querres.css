@@ -1,0 +1,260 @@
+/* keyframes  */
+@keyframes xfade {
+    17% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    92% {
+        opacity: 0;
+    }
+    
+}
+
+@keyframes navbar {
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* media querre */
+
+@media(max-width:768px) {
+  
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background: transparent;
+    color: #2c91f0;
+    height: 70px;
+}
+
+.navbar .logo{
+    position: absolute;
+    left: 8px;
+}
+
+/* dropdwon */
+
+.dropdown{
+    position: absolute;
+    top: 13px;
+    right: 5px;
+}
+
+.dropdown {
+    background: #2c91f0;
+    color: #ddd;
+    padding: 0;
+    font-size: 1rem;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    width: 100px;
+    background-color: #2c91f0;
+    color: #fff;
+    padding: 9px;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2c91f0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* hover dropdown */
+.dropdown-content a:hover {
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content .woo-1:hover {
+    background: #3183cf;
+}
+
+.dropdown:hover .dropdown-content .woo-2:hover {
+    background: #3183cf;
+}
+
+.dropdown:hover .dropdown-content .woo-3:hover {
+    background: #3183cf;
+}
+
+.dropdown:hover .dropdown-content .woo-4:hover {
+    background: #3183cf;
+}
+
+
+    /* hero content */
+
+    .hero .Content {
+        height: 90%;
+    }
+
+
+    .hero .Content .btn {
+        position: absolute;
+        top: 51.7%;
+        right: 18.2%;
+    }
+
+    .hero .Content .btn-2 {
+        position: absolute;
+        top: 51%;
+        left: 18.2%;
+    }
+
+    /* btn */
+    .btn {
+        padding: 5px 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+
+    .btn-2 {
+        padding: 5px 15px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 25px;
+    }
+
+    .white {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-top: 50px;
+        border: none;
+        padding: 5px 5px;
+
+    }
+
+    /* flex  */
+    .flex-columns .columns-1,
+    .flex-columns .columns-2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-major {
+        height: 70%;
+        margin: 0 70px;
+    }
+
+    .flex-major>div {
+        padding: 10px;
+        margin: 0px 70px;
+    }
+
+    .flex-major .hey {
+        padding: 10px;
+        margin: 30px 70px;
+    }
+
+    .flex-major h4 {
+        font-size: 0.5rem;
+        font-weight: 400;
+
+    }
+
+    .flex-wow {
+        flex-direction: column;
+    }
+
+    /* text */
+    .font-1 {
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+
+    .font {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .bold {
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+
+    /* images */
+    .logo {
+        width: 70px;
+    }
+
+    .brown{
+        background:#2c91f0;
+    }
+    .width{
+        width: 10px;
+        margin-right: 3px;
+    }
+
+    .good{
+        margin-left: 10px;
+    }
+
+    .nah{
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    .font-2{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .grass{
+        width: 400px;
+        border-radius: 5px;
+    }
+    .form-contact form input{
+        margin:0 10px;       
+    }
+ 
+.form-contact form label{
+    margin-right: 5px;
+}
+}
+
