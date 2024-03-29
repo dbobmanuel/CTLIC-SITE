@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* box */
+
+.box {
+    width: 86%;
+    margin: 0% 7%;
+    background-color: #fff;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #2c91f0;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    padding: 0 80px;
+    animation: navbar 1s  ease-in-out;
+}
+
+
+.navbar a:nth-child(1) ,
+.navbar a:nth-child(2) ,
+.navbar a:nth-child(3) ,
+.navbar a:nth-child(4) {
+    color: #2c91f0;
+    padding: 10px 50px;
+    margin:0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #2c91f0 2px solid;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+
+
+.dropbtn{
+    position: absolute;
+    top: -100px;
+}
+/* Header */
+
+.hero {
+    background: url('./images/Screenshot\ 2023-09-09\ at\ 04-03-18\ Ctlyf✝️\ \(@christthelamb_yf\)\ •\ Instagram\ photos\ and\ videos.png')no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+.hero .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+    animation: fade-out linear;
+    animation-timeline: veiw();
+    animation-range-start: exit;
+}
+
+.hero.Content h1 {
+    font-size: 55px;
+}
+
+.hero.Content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+    z-index: 10;
+}
+
+.hero .Content .btn {
+    position: absolute;
+    top: 58%;
+    right: 35%;
+}
+
+.hero .Content .btn-2 {
+    position: absolute;
+    top: 58%;
+    left: 34%;
+}
+
+/* image fade */
+
+.glow {
+    list-style: none;
+    margin: 0px 5px;
+    padding: 0 0px;
+    width: 700px;
+}
+
+
+.fade {
+    position: absolute;
+    height: 200px;
+}
+
+
+.fade:nth-child(4) {
+    animation: xfade 16s 0s infinite;
+    height: 200px;
+}
+
+.fade:nth-child(3) {
+    animation: xfade 16s 4s infinite;
+    height: 200px;
+}
+
+.fade:nth-child(2) {
+    animation: xfade 16s 8s infinite;
+    height: 200px;
+}
+
+.fade:nth-child(1) {
+    animation: xfade 16s 12s infinite;
+    height: 200px;
+}
+
+/* programs  */
+.programs .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 80px 0;
+}
+
+.programs .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.programs .column .programs-1 .programs .column .programs-2 {
+    height: 100%;
+}
+
+.programs img {
+    width: 50px;
+    height: 50px;
+}
+
+.programs .programs-1 .result .programs-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.programs h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.programs p {
+    margin: 0 0;
+}
+
+/* flex items */
+
+
+.flex-colums .flex-reverse .row {
+    flex-direction: row-reverse;
+}
+
+.flex-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.flex-items>div {
+    padding: 5px;
+    margin: 8px 0px;
+}
+
+.flex-items>div .class {
+    margin: 10px 10px;
+}
+
+.flex-items>div P {
+    color: #333;
+}
+
+.flex-items>div h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* i don know  */
+.flex-wow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.flex-wow>div {
+    padding: 5px;
+    margin: 8px 0px;
+}
+
+.flex-wow>div .class {
+    margin: 10px 10px;
+}
+
+.flex-wow>div P {
+    color: #333;
+}
+
+.flex-wow>div h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* that */
+.flex-major {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0 90px;
+}
+
+.flex-major>div {
+    padding: 20px;
+    margin: 0 100px;
+}
+
+.flex-major .hey {
+    padding: 20px;
+    margin: 10px 100px;
+}
+
+.flex-major>div h4 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+    height: 70px;
+}
+.form-contact form{
+    display: inline-flex;
+    width: 300px;
+    height: 35px;
+
+}
+.form-contact form label{
+    margin-right: 100px;
+}
+
+.form-contact form input{
+    margin:0 140px;
+}
+.good{
+    margin-left: 400px;
+}
+.grass{
+    width: 600px;
+    border-radius: 10px;
+    border: #fff 1px dashed;
+    background-color: #2c91f0;
+}
+.grass:focus{
+    background-color: #fff;
+    color: #333;
+    border: #fff 1px solid;
+}
